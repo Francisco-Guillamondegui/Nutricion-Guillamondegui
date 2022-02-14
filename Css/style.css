@@ -896,10 +896,10 @@ footer {
 
 
  /* Elimino comentario para desplegar animación */
-/* footer .logosFcaja .logosF a :hover {
+footer .logosFcaja .logosF a :hover {
     height: 7vh;
     width: 7vh;
-    transition-duration: 1s; */
+    transition-duration: 1s;
     
 } 
 
