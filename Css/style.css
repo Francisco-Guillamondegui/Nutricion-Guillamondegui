@@ -1,14 +1,14 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -25,40 +25,43 @@ header {
   grid-area: main;
 }
 
-#mainContacto {
-  grid-area: main;
-}
-
-#mainFaqs {
-  grid-area: main;
+footer {
+  grid-area: footer;
 }
 
 #mainQuienes {
   grid-area: main;
-  height: 75vh;
+  height: 140vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 #mainRecursos {
   grid-area: main;
+  width: 98.6vw;
+  padding-top: 10vh;
 }
 
-footer {
-  grid-area: footer;
+#mainContacto {
+  grid-area: main;
+  height: 90vh;
+}
+
+#mainFaqs {
+  grid-area: main;
+  padding-top: 3vh;
 }
 
 /* BURGER */
 .container {
-  max-width: 1050px;
   width: 90%;
   margin: auto;
 }
 
 .navbar {
-  width: 100%;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.151);
   grid-area: burger;
 }
@@ -208,7 +211,6 @@ nav {
   display: grid;
   background-color: #e9183b;
   position: fixed;
-  border-bottom: solid white;
   z-index: 2;
 }
 
@@ -267,14 +269,17 @@ footer {
   justify-content: center;
   color: #fff;
   font-size: 1.3rem;
+  width: 98.6vw;
+  box-shadow: 5px 0 0px #000000;
 }
 
 .logosFcaja {
   display: flex;
   background-color: #e9183b;
-  width: 100vw;
+  width: 98.6vw;
   justify-items: center;
   justify-content: center;
+  box-shadow: 5px 0 0px #e9183b;
 }
 
 .logosF {
@@ -299,6 +304,17 @@ footer {
   grid-area: servicio;
   flex: display;
   flex-direction: column;
+  width: 98.6vw;
+}
+
+.planes {
+  grid-area: planes;
+  width: 98.6vw;
+}
+
+.testimonios {
+  grid-area: testimonios;
+  width: 98.6vw;
 }
 
 .parallax {
@@ -310,14 +326,12 @@ footer {
 
 .imgServicio {
   background-image: url(../Imagenes/Fondo.jpg);
-  width: 100%;
+  width: 98.6vw;
   height: 75vh;
 }
 
 .introduccion {
-  height: 19.5vh;
   background: linear-gradient(#e9183b, #f04e69, #e9183b);
-  border: solid white;
   color: white;
   display: flex;
   flex-direction: column;
@@ -345,11 +359,6 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.planes {
-  grid-area: planes;
-  border: solid white;
 }
 
 .imgPlan1 {
@@ -381,13 +390,43 @@ footer {
   padding-left: 4vh;
 }
 
-.testimonios {
-  height: 243vh;
-  width: 100vw;
+.bullets div button a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.bullets div button:hover {
+  background-color: white;
+}
+
+.tituloPlan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .test {
   height: 45vh;
+}
+
+.btnMusculacion, .usoExtend {
+  background-color: #ec4949;
+}
+
+.btnDescenso {
+  background-color: #adff2f;
+}
+
+.btnColesterol {
+  background-color: #ffc815;
+}
+
+.btn {
+  width: 24vh;
+  height: 5vh;
+  font-size: 1rem;
+  margin-left: 20px;
 }
 
 /* ///////////////// Q U I E N E S   S O M O S  ///////////////// */
@@ -425,9 +464,20 @@ footer {
   font-size: 2rem;
 }
 
+.mapas {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mapa2 {
+  display: none;
+}
+
 /* ///////////////// R E C U R S O S  ///////////////// */
 .buenasP {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: 5rem;
@@ -443,7 +493,7 @@ footer {
 }
 
 .tips h2 {
-  box-shadow: 5px 0 10px black;
+  box-shadow: 0px 0 1px black;
   color: #fff;
   background-color: #e9183b;
   font-size: 2rem;
@@ -466,10 +516,10 @@ footer {
 }
 
 .video h2 {
-  box-shadow: 5px 0 10px black;
+  box-shadow: 0px 0 1px black;
   color: #fff;
   background-color: #e9183b;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 100%;
   box-sizing: border-box;
   padding-left: 1vh;
@@ -515,6 +565,21 @@ footer {
   font-size: 3rem;
 }
 
+.usoExtend {
+  background-color: lightgray;
+}
+
+div input:hover {
+  background-color: #ffc815;
+}
+
+/* Aplico Mixins */
+footer .logosFcaja .logosF a :hover {
+  height: 7vh;
+  width: 7vh;
+  transition-duration: 1s;
+}
+
 /* /////////////////   F A Q S   ///////////////// */
 .cajaFaq {
   height: 85vh;
@@ -552,17 +617,22 @@ footer {
     grid-template-columns: auto;
     grid-template-rows: 10vh auto 15vh;
     grid-template-areas: "header" "main" "footer";
+    border-left: solid white 2.3px;
   }
   nav {
-    width: 100%;
+    width: 98.6vw;
     grid-template-columns: 8vh auto 0vw;
     grid-template-rows: 10vh;
     grid-template-areas: "burger logo navegacion";
+    box-shadow: 5px 0 0px #e9183b;
+  }
+  .navegacion {
+    display: none;
   }
   footer {
     grid-template-columns: auto;
     grid-template-rows: auto 5vh;
-    grid-template-areas: "logosF" "textoF";
+    grid-template-areas: "logosFcaja" "textoF";
   }
   #mainIndex {
     grid-template-columns: auto;
@@ -574,28 +644,33 @@ footer {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "test1" "test2" "test3" "test4";
   }
-  .navegacion {
-    display: none;
+  .introduccion {
+    height: 25vh;
   }
 }
 
 /* MEDIA Q DESKTOP */
 @media screen and (min-width: 800px) {
-  /* GRIDS */
   #layout {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 10vh auto 15vh;
     grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+    width: 80vw;
   }
   nav {
-    grid-template-columns: 0vw 40vh  auto;
+    grid-template-columns: 0vw 40vh auto;
     grid-template-rows: 10vh;
     grid-template-areas: "burger logo navegacion";
   }
+  .navegacion {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
   footer {
-    grid-template-columns: auto;
+    grid-template-columns: 98.6vw;
     grid-template-rows: auto 5vh;
-    grid-template-areas: "logosF" "textoF";
+    grid-template-areas: "logosFcaja" "textoF";
   }
   #mainIndex {
     grid-template-columns: auto;
@@ -606,11 +681,6 @@ footer {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "test1 test2" "test3 test4";
-  }
-  .navegacion {
-    display: flex;
-    justify-content: end;
-    align-items: end;
   }
   .menu {
     display: flex;
@@ -632,6 +702,54 @@ footer {
     list-style: none;
     flex-direction: row;
   }
+  .navbar {
+    display: none;
+  }
+  .introduccion {
+    height: 15vh;
+  }
+  /* ///////////////// Q U I E N E S   S O M O S  ///////////////// */
+  #mainQuienes {
+    grid-area: main;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .cuadroQuienes {
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 40vw;
+    margin-left: 2vh;
+  }
+  .imgQuienes {
+    height: 55vh;
+    width: 35vh;
+  }
+  .textoQuienes {
+    height: 100%;
+    font-size: 2.5rem;
+    padding-left: 2vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+  }
+  .mapas {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mapa1 {
+    display: none;
+  }
+  .mapa2 {
+    display: contents;
+  }
   .imgServicio {
     height: 75vh;
   }
@@ -648,48 +766,21 @@ footer {
   .bullets {
     font-size: 5rem;
   }
-  .burger {
-    display: none;
-  }
   .testimonios {
     height: 95vh;
   }
-  /* ///////////////// Q U I E N E S   S O M O S  ///////////////// */
-  #mainQuienes {
-    grid-area: main;
-    height: 75vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-  }
-  .cuadroQuienes {
-    height: 55vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: 75vh;
-    margin-left: 2vh;
-  }
-  .imgQuienes {
-    height: 55vh;
-    width: 35vh;
-  }
-  .textoQuienes {
-    height: 100%;
-    font-size: 2.5rem;
-    padding-left: 2vh;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
   /* ///////////////// R E C U R S O S  ///////////////// */
+  #mainRecursos {
+    width: 98.6vw;
+    padding-top: 0vh;
+  }
   .buenasP {
-    height: 90vh;
+    height: 100vh;
     font-size: 7rem;
   }
   .tips {
     height: 50vh;
+    padding-top: 5vh;
   }
   .video {
     height: 40vh;
@@ -699,14 +790,14 @@ footer {
     justify-content: space-evenly;
     background-color: #fff;
   }
-  .multimedia {
+  .cuadroVid {
     height: 35vh;
-    width: 80VH;
+    width: 80vh;
   }
   /* ///////////////// C O N T A C T O   ///////////////// */
   .textoContacto {
     font-size: 4rem;
-    height: 25vh;
+    height: 40vh;
     width: 80%;
   }
   .formContacto form {
@@ -721,21 +812,12 @@ footer {
   /* /////////////////   F A Q S   ///////////////// */
   .faq p {
     padding-left: 1vh;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .faq h2 {
     font-size: 2rem;
     box-sizing: border-box;
     padding-left: 1vh;
     height: 3vh;
-  }
-  .nav-container .hamburger-lines .line {
-    display: none;
-  }
-  /* Elimino comentario para desplegar animación */
-  footer .logosFcaja .logosF a :hover {
-    height: 7vh;
-    width: 7vh;
-    transition-duration: 1s;
   }
 }

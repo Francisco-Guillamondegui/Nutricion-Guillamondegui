@@ -1,96 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 @import "_highlight";
 
-body{
-    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-}
-/* GRILLA PADRE */
-#layout {
-    display: grid;
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
 }
 
+/* GRILLA PADRE */
+
+#layout {
+  display: grid;
+}
 
 header {
-    grid-area: header;
-    
+  grid-area: header;
 }
 
 #mainIndex {
-    grid-area: main;
-    
-}
-
-#mainContacto {
-    grid-area: main;
-}
-
-#mainFaqs {
-    grid-area: main;
-}
-
-#mainQuienes {
-    grid-area: main;
-    height: 75vh;
-    width: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-#mainRecursos {
-    grid-area: main;
+  grid-area: main;
 }
 
 footer {
-    grid-area: footer;
-        
+  grid-area: footer;
 }
 
+#mainQuienes {
+  grid-area: main;
+  height: 140vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainRecursos {
+  grid-area: main;
+  width: 98.6vw;
+  padding-top: 10vh;
+}
+
+#mainContacto {
+  grid-area: main;
+  height: 90vh;
+}
+
+#mainFaqs {
+  grid-area: main;
+  padding-top: 3vh;
+}
 
 /* BURGER */
 
 .container {
-    max-width: 1050px;
-    width: 90%;
-    margin: auto;
-  }
-  
-  .navbar {
-    width: 100%;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.151);
-    grid-area: burger;
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 62px;
-  }
-  
-  .navbar
-   { .menu-items {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.151);
+  grid-area: burger;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar {
+  .menu-items {
     display: flex;
   }
 }
-  
-  .navbar 
-  {.nav-container li {
+
+.navbar {
+  .nav-container li {
     list-style: none;
   }
 }
-  
-  .navbar 
-  {.nav-container a {
+
+.navbar {
+  .nav-container a {
     text-decoration: none;
     color: #0e2431;
     font-weight: 500;
@@ -98,22 +98,23 @@ footer {
     padding: 0.7rem;
   }
 }
-  
-  .navbar
-  { .nav-container
-   {a:hover{
-      font-weight: bolder;
-  }
-}}
-  
+
+.navbar {
   .nav-container {
-    display: block;
-    position: relative;
-    height: 60px;
+    a:hover {
+      font-weight: bolder;
+    }
   }
-  
-  .nav-container
-  { .checkbox {
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container {
+  .checkbox {
     position: absolute;
     display: block;
     height: 32px;
@@ -125,9 +126,8 @@ footer {
     cursor: pointer;
   }
 }
-  
-  .nav-container 
-  {
+
+.nav-container {
   .hamburger-lines {
     display: block;
     height: 26px;
@@ -141,47 +141,47 @@ footer {
     justify-content: space-between;
   }
 }
-  
-  .nav-container 
-  {.hamburger-lines 
-    {.line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #ffffff;
+
+.nav-container {
+  .hamburger-lines {
+    .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #ffffff;
+    }
   }
 }
-  }
-  
-  .nav-container 
-  {.hamburger-lines
-    { .line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
-  }
-}
-  }
-  
-  .nav-container 
-  {.hamburger-lines 
-    {.line2 {
-    transition: transform 0.2s ease-in-out;
+
+.nav-container {
+  .hamburger-lines {
+    .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
   }
 }
-  }
-  
-  .nav-container 
-  {.hamburger-lines 
-    {.line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
+
+.nav-container {
+  .hamburger-lines {
+    .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
   }
 }
+
+.nav-container {
+  .hamburger-lines {
+    .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
   }
-  
-  .navbar
-  { .menu-items {
+}
+
+.navbar {
+  .menu-items {
     padding-top: 120px;
     background-color: #e9183b;
     height: 100vh;
@@ -196,9 +196,9 @@ footer {
     text-align: center;
   }
 }
-  
-  .navbar 
-  {.menu-items li {  
+
+.navbar {
+  .menu-items li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -206,437 +206,446 @@ footer {
   }
 }
 
-  .menuItems {
-      width: 100%;
-  }
+.menuItems {
+  width: 100%;
+}
 
-  .navbar 
-  {.menu-items li a {
+.navbar {
+  .menu-items li a {
     color: rgb(255, 255, 255);
     font-size: 2rem;
     width: 20vw;
   }
-  }
-  
-  .logo {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 1.2rem;
-    color: #0e2431;
-  }
-  
-  .nav-container 
-  {input[type="checkbox"]:checked ~ .menu-items {
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #0e2431;
+}
+
+.nav-container {
+  input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(30vw);
   }
 }
-  
-  .nav-container 
-  {input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+
+.nav-container {
+  input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
   }
 }
-  
-  .nav-container 
-  {input[type="checkbox"]:checked ~ .hamburger-lines 
-    {.line2 {
-    transform: scaleY(0);
+
+.nav-container {
+  input[type="checkbox"]:checked ~ .hamburger-lines {
+    .line2 {
+      transform: scaleY(0);
+    }
   }
 }
-  }
-  
-  .nav-container 
-  {input[type="checkbox"]:checked ~ .hamburger-lines
-    { .line3 {
-    transform: rotate(-45deg);
+
+.nav-container {
+  input[type="checkbox"]:checked ~ .hamburger-lines {
+    .line3 {
+      transform: rotate(-45deg);
+    }
   }
 }
-  }
-  
-  .nav-container 
-  {input[type="checkbox"]:checked ~ .logo{
+
+.nav-container {
+  input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
-  }
-
-
-
+}
 
 /* GRILLA NAV BAR */
 
 nav {
-    display: grid;
-    background-color: #e9183b;
-    position: fixed;
-    border-bottom: solid white;
-    z-index: 2;
+  display: grid;
+  background-color: #e9183b;
+  position: fixed;
+  z-index: 2;
 }
 
 .navbar {
-    grid-area: burger;
-    display: flex;
-    align-items: center;
-    padding-left: 2vh;
+  grid-area: burger;
+  display: flex;
+  align-items: center;
+  padding-left: 2vh;
 }
 
 .burgImg {
-    height: 5vh;
-    width: 5vh;
-    
+  height: 5vh;
+  width: 5vh;
 }
 
 .logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-    
-
+  grid-area: logo;
+  display: flex;
+  align-items: center;
 }
 
-
-h1 
-{a{
+h1 {
+  a {
     text-decoration: none;
     padding-left: 1vw;
     display: flex;
     color: rgb(255, 255, 255);
     font-size: 3.5rem;
-        
-}
+  }
 }
 
 .imgLogo {
-    height: 8vh;
-    border-radius: 30%;
-    padding: 1vh 1vh 1vh 1vh;
+  height: 8vh;
+  border-radius: 30%;
+  padding: 1vh 1vh 1vh 1vh;
 }
 
-
-
 .navegacion {
-    grid-area: navegacion;
-    background-color: #e9183b;
-    
-    
-    
+  grid-area: navegacion;
+  background-color: #e9183b;
 }
 
 .drop {
-    background-color: #e9183b;
+  background-color: #e9183b;
 }
-
 
 /* Footer */
 
 footer {
-    display: grid;
-    border-top: solid white; 
+  display: grid;
+  border-top: solid white;
 }
 
-
 .textoF {
-    grid-area: textoF;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 1.3rem;
-    
-    
+  grid-area: textoF;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3rem;
+  width: 98.6vw;
+  box-shadow: 5px 0 0px #000000;
 }
 
 .logosFcaja {
-        display: flex;
-        background-color: #e9183b;
-        width: 100vw;
-        justify-items: center;
-        justify-content: center;
+  display: flex;
+  background-color: #e9183b;
+  width: 98.6vw;
+  justify-items: center;
+  justify-content: center;
+  box-shadow: 5px 0 0px #e9183b;
 }
 
 .logosF {
-    grid-area: logosF;
-    background-color:#e9183b;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 40vh;
-    
-    
+  grid-area: logosF;
+  background-color: #e9183b;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40vh;
 }
-
-
 
 .socialM {
-    
-    width: 5vh;
-        
+  width: 5vh;
 }
-
-
-
 
 /* ///////////////// I N D E X ///////////////// */
-#mainIndex {
-    display: grid;
-}
 
+#mainIndex {
+  display: grid;
+}
 
 .servicio {
-    grid-area: servicio;
-    flex: display;
-    flex-direction: column;
+  grid-area: servicio;
+  flex: display;
+  flex-direction: column;
+  width: 98.6vw;
 }
 
+.planes {
+  grid-area: planes;
+  width: 98.6vw;
+}
 
+.testimonios {
+  grid-area: testimonios;
+  width: 98.6vw;
+}
 
 .parallax {
-    background-attachment: fixed;
-	background-position: 70%;
-	background-repeat: no-repeat;
-	background-size:  cover;
-    
+  background-attachment: fixed;
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .imgServicio {
-    background-image: url(../Imagenes/Fondo.jpg) ;
-    width: 100%;
-    height: 75vh;   
+  background-image: url(../Imagenes/Fondo.jpg);
+  width: 98.6vw;
+  height: 75vh;
 }
 
 .introduccion {
-    height: 19.5vh;
-    background: linear-gradient(#e9183b,#f04e69, #e9183b);
-    border: solid white;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-.introduccion 
-{h2 {
+  background: linear-gradient(#e9183b, #f04e69, #e9183b);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  h2 {
     font-size: 1.8rem;
     text-align: center;
-}
-}
-
-.introduccion 
-{p {
+  }
+  p {
     font-size: 1rem;
     text-align: center;
     width: 85%;
-}
+  }
 }
 
 .frameB {
-    height: 7vh;
-    background: linear-gradient(black, rgb(71, 71, 71), black);
-    border-bottom: solid white;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-
-.planes {
-    grid-area: planes;
-    border: solid white;
+  height: 7vh;
+  background: linear-gradient(black, rgb(71, 71, 71), black);
+  border-bottom: solid white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .imgPlan1 {
-    background-image: url(../Imagenes/musculacion.jpg) ;
-    width: 100%;
-    height: 30vh;
-    
-      
+  background-image: url(../Imagenes/musculacion.jpg);
+  width: 100%;
+  height: 30vh;
 }
 
 .imgPlan2 {
-    background-image: url(../Imagenes/descenso.jpg) ;
-    width: 100%;
-    height: 30vh;  
+  background-image: url(../Imagenes/descenso.jpg);
+  width: 100%;
+  height: 30vh;
 }
 
 .imgPlan3 {
-    background-image: url(../Imagenes/Heart.jpeg) ;
-    width: 100%;
-    height: 30vh;  
+  background-image: url(../Imagenes/Heart.jpeg);
+  width: 100%;
+  height: 30vh;
 }
 
 .bullets {
-    background: linear-gradient(to right,rgba(8, 8, 8, 0.596),rgba(59, 59, 59, 0.404), rgba(128, 128, 128, 0.253),rgba(153, 153, 153, 0));
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: white;
-    font-size: 3rem;
-    padding-left: 4vh;
-    
-    
+  background: linear-gradient(
+    to right,
+    rgba(8, 8, 8, 0.596),
+    rgba(59, 59, 59, 0.404),
+    rgba(128, 128, 128, 0.253),
+    rgba(153, 153, 153, 0)
+  );
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 3rem;
+  padding-left: 4vh;
+  div {
+    button {
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+      }
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
 }
-
-
-.testimonios {
-    height: 243vh;
-    width: 100vw;
-    
+.tituloPlan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
-
 
 .test {
-    height: 45vh
+  height: 45vh;
 }
 
+// Variables botones
+$altoBtn: 5vh;
+$anchoBtn: 24vh;
+$tamanoTipo: 1rem;
+$nombrePlan: (
+  musculacion: #ec4949,
+  descenso: #adff2f,
+  colesterol: #ffc815,
+);
 
+//map
+$nombrePlan: (
+  Musculacion: #ec4949,
+  Descenso: #adff2f,
+  Colesterol: #ffc815,
+);
 
+@each $plan, $color in $nombrePlan {
+  .btn#{$plan} {
+    background-color: $color;
+  }
+}
+
+// Estilos
+.btn {
+  width: $anchoBtn;
+  height: $altoBtn;
+  font-size: $tamanoTipo;
+  margin-left: 20px;
+}
 
 /* ///////////////// Q U I E N E S   S O M O S  ///////////////// */
 
-
 .cuadroQuienes {
-    height: 73vh;
-    width: 35vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+  height: 73vh;
+  width: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .imgQuienes {
-    height: 45vh;
-    width: 35vh;
+  height: 45vh;
+  width: 35vh;
 }
 
 .textoQuienes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-    text-align: justify;
-    color: #fff;
-    background-color: #e9183b;
-    font-size: 2rem;
-    width: 35vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  text-align: justify;
+  color: #fff;
+  background-color: #e9183b;
+  font-size: 2rem;
+  width: 35vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  height: 35vh;
 }
 
-.textoQuienes 
-{h2 {
+.textoQuienes {
+  h2 {
     font-size: 2rem;
-}
+  }
 }
 
+.mapas {
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mapa2 {
+  display: none;
+}
 
 /* ///////////////// R E C U R S O S  ///////////////// */
 
 .buenasP {
-    
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    font-size: 5rem;}
-
-.tips{
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    list-style:circle;
-    justify-content: space-around;
-    background-color: #fff;
-    
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
 }
 
-.tips 
-{h2 {
-    
-    box-shadow: 5px 0 10px black;
-    color:#fff;
+.tips {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  list-style: circle;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.tips {
+  h2 {
+    box-shadow: 0px 0 1px black;
+    color: #fff;
     background-color: #e9183b;
     font-size: 2rem;
     box-sizing: border-box;
     padding-left: 1vh;
-}
+  }
 }
 
-.tips
-{ ul {
+.tips {
+  ul {
     padding-left: 3vh;
     width: 80%;
-}
+  }
 }
 
 .video {
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #fff;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
 }
 
-.video 
-{h2 {
-    box-shadow: 5px 0 10px black;
-    color:#fff;
+.video {
+  h2 {
+    box-shadow: 0px 0 1px black;
+    color: #fff;
     background-color: #e9183b;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 100%;
     box-sizing: border-box;
     padding-left: 1vh;
+  }
 }
-}
-
 
 .multimedia {
-    height: 26vh;
-    
+  height: 26vh;
 }
-
 
 /* ///////////////// C O N T A C T O   ///////////////// */
 
 .textoContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: justify;
-    padding-left: 3vh;
-    font-size: 3rem;
-    height: 30vh;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding-left: 3vh;
+  font-size: 3rem;
+  height: 30vh;
+  width: 90%;
 }
 
-.textoContacto 
-{h2{
+.textoContacto {
+  h2 {
     font-size: 3rem;
     padding-top: 1vh;
-}
-}
-
-.textoContacto 
-{ul 
-    {li {
-    list-style-type: none;
-    padding-top: 1vh;
-}
-}
+  }
 }
 
-.formContacto 
-{form  {
+.textoContacto {
+  ul {
+    li {
+      list-style-type: none;
+      padding-top: 1vh;
+    }
+  }
+}
+
+.formContacto {
+  form {
     height: 45vh;
     display: flex;
     flex-direction: column;
@@ -644,341 +653,331 @@ footer {
     font-size: 2rem;
     justify-content: space-evenly;
     padding-left: 3vh;
-
+  }
 }
-}
 
-.formContacto 
-{h2 {
+.formContacto {
+  h2 {
     font-size: 3rem;
-}
+  }
 }
 
+//Extend
+.usoExtend {
+  @extend .btnMusculacion;
+  background-color: lightgray;
+}
+
+//MAPGET
+div {
+  input:hover {
+    background-color: map-get($nombrePlan, Colesterol);
+  }
+}
+
+//Mixins
+@mixin tamIcono($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+/* Aplico Mixins */
+footer {
+  .logosFcaja {
+    .logosF {
+      a :hover {
+        @include tamIcono(7vh, 7vh);
+        transition-duration: 1s;
+      }
+    }
+  }
+}
 
 /* /////////////////   F A Q S   ///////////////// */
 
-.cajaFaq{
-    height: 85vh;
-  
-    
-}
-
-.faq{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 85vh;
-  
+.cajaFaq {
+  height: 85vh;
 }
 
 .faq {
-    p{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 85vh;
+}
+
+.faq {
+  p {
     padding-left: 1vh;
     font-size: 1rem;
     display: flex;
-    
-    } 
+  }
 }
 
-.faq 
-{h2 {
+.faq {
+  h2 {
     display: flex;
     box-shadow: 5px 0 10px black;
-    color:#fff;
+    color: #fff;
     background-color: #e9183b;
     font-size: 1rem;
     box-sizing: border-box;
     padding-left: 1vh;
     height: 3vh;
     align-items: center;
-    
+  }
 }
-}
-
 
 /* MEDIA Q CELULAR */
 @media screen and (min-width: 320px) {
-  
+  /* GRIDS */
 
-    /* GRIDS */
+  #layout {
+    grid-template-columns: auto;
+    grid-template-rows: 10vh auto 15vh;
+    grid-template-areas: "header" "main" "footer";
+    border-left: solid white 2.3px;
+  }
 
-    #layout {
-        grid-template-columns: auto;
-        grid-template-rows: 10vh auto 15vh;
-        grid-template-areas: "header" "main" "footer";
-        
-    }
+  nav {
+    width: 98.6vw;
+    grid-template-columns: 8vh auto 0vw;
+    grid-template-rows: 10vh;
+    grid-template-areas: "burger logo navegacion";
+    box-shadow: 5px 0 0px #e9183b;
+  }
 
-    nav {
-        width: 100%;
-        grid-template-columns: 8vh auto 0vw;
-        grid-template-rows: 10vh;
-        grid-template-areas: "burger logo navegacion";
-        
-    }
+  .navegacion {
+    display: none;
+  }
+  footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto 5vh;
+    grid-template-areas: "logosFcaja" "textoF";
+  }
 
-    footer {
-        grid-template-columns: auto;
-        grid-template-rows: auto 5vh;
-        grid-template-areas: "logosF" "textoF";
-    }
+  #mainIndex {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "servicio" "planes" "testimonios";
+  }
 
-
-    #mainIndex {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "servicio" "planes" "testimonios";
-    }
-
-    #testimonios {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "test1" "test2" "test3" "test4";
-    }
-
-    .navegacion {
-        display: none;
-    }
-
-
-    
-
-
+  #testimonios {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "test1" "test2" "test3" "test4";
+  }
+  .introduccion {
+    height: 25vh;
+  }
 }
 
-    /* MEDIA Q DESKTOP */
+/* MEDIA Q DESKTOP */
 
 @media screen and (min-width: 800px) {
-    
-    
+  ///////////////* GRIDS DESKTOP*///////////
 
-    /* GRIDS */
+  #layout {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 10vh auto 15vh;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+    width: 80vw;
+  }
 
-    #layout {
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: 10vh auto 15vh;
-        grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-        
+  nav {
+    grid-template-columns: 0vw 40vh auto;
+    grid-template-rows: 10vh;
+    grid-template-areas: "burger logo navegacion";
+  }
+
+  .navegacion {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+
+  footer {
+    grid-template-columns: 98.6vw;
+    grid-template-rows: auto 5vh;
+    grid-template-areas: "logosFcaja" "textoF";
+  }
+
+  #mainIndex {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "servicio" "planes" "testimonios";
+  }
+
+  #testimonios {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "test1 test2" "test3 test4";
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    & :hover {
+      background-color: $highlight;
+      color: $text;
     }
-
-    nav {
-        grid-template-columns: 0vw 40vh  auto;
-        grid-template-rows: 10vh;
-        grid-template-areas: "burger logo navegacion";
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      padding-right: 1vw;
     }
-
-
-    footer {
-        grid-template-columns: auto;
-        grid-template-rows: auto 5vh;
-        grid-template-areas: "logosF" "textoF";
+    ul {
+      display: none;
+      list-style: none;
+      flex-direction: row;
     }
+  }
 
-    #mainIndex {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "servicio" "planes" "testimonios";
-    }
+  .navbar {
+    display: none;
+  }
+  .introduccion {
+    height: 15vh;
+  }
 
+  /* ///////////////// Q U I E N E S   S O M O S  ///////////////// */
 
-    #testimonios {
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        grid-template-areas: "test1 test2" "test3 test4";
-    }
+  #mainQuienes {
+    grid-area: main;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
 
-    .navegacion {
-        display: flex;
-        justify-content: end;
-        align-items: end;
-              
-                        
-    }
-
-    .menu
-    {
-        display: flex;
-        list-style: none;
-        flex-direction: row;
-        
-        & :hover {
-            background-color: $highlight;
-            color: $text;
-        }
-     a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.8rem;
-        padding-right: 1vw;
-        }
-        ul{
-            display: none;
-            list-style: none;
-            flex-direction: row;
-           
-        }
-    }
-
-
-    .imgServicio {
-        height: 75vh;
-    } 
-
-    .introduccion {
-        height: 14.5vh;
-     h2 {
-            font-size: 2rem;
-        }
-    p {
-            font-size: 1.5rem;
-            width: 85%;
-        }
-    }
-    
-  
-    
-    .bullets {
-       
-        font-size: 5rem;
-            
-    }
-
-    .burger {
-        display: none;
-
-    }
-
-    .testimonios {
-        height: 95vh;
-    }
-    /* ///////////////// Q U I E N E S   S O M O S  ///////////////// */
-
-    
-    #mainQuienes {
-        grid-area: main;
-        height: 75vh;
-        width: 100%;
-        display:flex;
-        align-items: center;
-        justify-content: start;
-    
-        
-    }
-
-.cuadroQuienes {
+  .cuadroQuienes {
     height: 55vh;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    width: 75vh;
+    width: 40vw;
     margin-left: 2vh;
+  }
 
-    
-}
-
-.imgQuienes {
+  .imgQuienes {
     height: 55vh;
     width: 35vh;
-}
+  }
 
-.textoQuienes {
+  .textoQuienes {
     height: 100%;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     padding-left: 2vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}   
+    width: 50vw;
+  }
 
-   /* ///////////////// R E C U R S O S  ///////////////// */
+  .mapas {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.buenasP {
-    
-    height: 90vh;
-    font-size: 7rem; 
-}
+  .mapa1 {
+    display: none;
+  }
 
-.tips{
+  .mapa2 {
+    display: contents;
+  }
+
+  .imgServicio {
+    height: 75vh;
+  }
+
+  .introduccion {
+    height: 14.5vh;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+      width: 85%;
+    }
+  }
+
+  .bullets {
+    font-size: 5rem;
+  }
+
+  .testimonios {
+    height: 95vh;
+  }
+
+  /* ///////////////// R E C U R S O S  ///////////////// */
+
+  #mainRecursos {
+    width: 98.6vw;
+    padding-top: 0vh;
+  }
+
+  .buenasP {
+    height: 100vh;
+    font-size: 7rem;
+  }
+
+  .tips {
     height: 50vh;
-    
-}
+    padding-top: 5vh;
+  }
 
-
-.video {
+  .video {
     height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
     background-color: #fff;
-}
+  }
 
-
-
-
-.multimedia {
+  .cuadroVid {
     height: 35vh;
-    width: 80VH;
-    
-}
+    width: 80vh;
+  }
 
-/* ///////////////// C O N T A C T O   ///////////////// */
+  /* ///////////////// C O N T A C T O   ///////////////// */
 
-.textoContacto {
+  .textoContacto {
     font-size: 4rem;
-    height: 25vh;
+    height: 40vh;
     width: 80%;
-}
+  }
 
-.formContacto 
-{form  {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    font-size: 2.5rem;
-    justify-content: space-evenly;
-    padding-left: 3vh;
-}
-}
+  .formContacto {
+    form {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      font-size: 2.5rem;
+      justify-content: space-evenly;
+      padding-left: 3vh;
+    }
+  }
 
-/* /////////////////   F A Q S   ///////////////// */
+  /* /////////////////   F A Q S   ///////////////// */
 
-.faq 
- {p{
-    padding-left: 1vh;
-    font-size: 2rem;
-}
-h2 {
-   
-    font-size: 2rem;
-    box-sizing: border-box;
-    padding-left: 1vh;
-    height: 3vh;}   
-
-}
-
-.nav-container {
-.hamburger-lines
-{.line {
-    display: none;
+  .faq {
+    p {
+      padding-left: 1vh;
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      box-sizing: border-box;
+      padding-left: 1vh;
+      height: 3vh;
+    }
   }
 }
-}
-
- /* Elimino comentario para desplegar animación */
-footer {
-    .logosFcaja{
-     .logosF 
-     {a :hover {
-    height: 7vh;
-    width: 7vh;
-    transition-duration: 1s;
-     }
-    }
-}
-} 
-}
-
-
-
